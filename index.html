@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Themed Webpage</title>
+    <style>
+        /* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #e0f7fa; /* Light shade of blue */
+}
+
+.container {
+    height: 200px;
+    width: 500px;
+    text-align: center;
+    background: linear-gradient(to bottom right, #2196f3, #90caf9); /* Blue gradient */
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+    color: #fff;
+    margin-bottom: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.btn {
+    padding: 15px 30px;
+    background-color: #64b5f6; /* Different shade of blue */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #42a5f5; /* Slightly darker shade on hover */
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .buttons {
+        flex-direction: column;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">select any of the options</h1>
+        <div class="buttons">
+            <a href="https://simulations-wheat.vercel.app/"><button class="btn simulation-btn">Simulations</button></a>
+            <a href="https://video-calling-21228.bubbleapps.io/version-test?debug_mode=true"><button class="btn video-call-btn">Video Calling</button></a>
+            <a href="https://www.blackbox.ai/agent/AskifyUsMrSjA"><button class="btn chatbot-btn">Chatbot</button></a>
+            <button class="btn board-btn">Board</button>
+        </div>
+    </div>
+    <script src="script.js"></script> <!-- Include if you have custom JS -->
+</body>
+</html>
